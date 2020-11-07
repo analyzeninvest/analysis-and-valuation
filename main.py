@@ -7,7 +7,7 @@ def search_for_excel(ticker):
         xlsx_name = ticker + ".xlsx"
         if re.match(xlsx_name, files):
             return(path + xlsx_name)
-
+        
 def make_industry_comparison_excel(list_of_stocks, dict_of_attribute):
     pass
 
@@ -44,18 +44,15 @@ def fetch_attributes_from_excel(list_of_stocks, dict_of_attribute):
                                     value = []
                                     key = sheet[column + str(2)].value
                                     for index in range(3, 22):
-                                        values.append(sheet[column + str(index)].value)
+                                        value.append(sheet[column + str(index)].value)
                                     key_value_pair = {key:value}
                                     print(key_value_pair)
-                        
                         
 def add_attribute():
     pass
 
-
 def add_stocks():
     pass
-
 
 def main():
     """
@@ -66,8 +63,7 @@ def main():
         "Total Non-Current Liabilities",
         "Current Investments Unquoted Book Value",
         "Equity Share Capital"]}
-    make_industry_comparison_excel(stock_ticker_list, dict_of_attribute)
-
+    fetch_attributes_from_excel(stock_ticker_list, dict_of_attribute)
 
 if __name__ == '__main__':
     main()
