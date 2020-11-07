@@ -1,0 +1,17 @@
+
+* What is it
+
+* How this is supposed to work
+
+* TODO Industry analysis 
+ - [ ] get names of stocks from the user
+ - [ ] get the attribute based on user input
+ - [ ] fetch the data from the database
+ - [ ] make the xls sheet updated based on these inputs
+ - [ ] chart the changes
+
+* TODO Stock Valuation
+  - [ ] get names of stocks from the user
+  - [ ] fetch the data from the database
+  - [ ] Calculate Valuation
+
