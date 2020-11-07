@@ -58,12 +58,17 @@ def main():
     """
     For now this is only for testing the codes.
     """
-    stock_ticker_list = ['BDL']
+    stock_ticker_list = ['BDL', 'ASTRAMICRO']
     dict_of_attribute = {"Standalone_Balance_Sheet":[
         "Total Non-Current Liabilities",
         "Current Investments Unquoted Book Value",
-        "Equity Share Capital"]}
-    fetch_attributes_from_excel(stock_ticker_list, dict_of_attribute)
+        "Equity Share Capital"],
+                         "Standalone_Profit_and_Loss":[
+                             "Total Revenue",
+                             "Depreciation And Amortisation Expenses"
+                         ]}
+    things = fetch_attributes_from_excel(stock_ticker_list, dict_of_attribute)
+    print(things)
 
 if __name__ == '__main__':
     main()
